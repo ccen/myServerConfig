@@ -14,10 +14,10 @@ if [ ! -d /usr/local/go ]; then
         mkdir go/bin
         mkdir go/pkg
     fi
-    echo -e "\n#Add by ccen go_install.sh\nexport GOPATH=~/go" >> .bashrc
-    echo -e "\nexport PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin" >> .bashrc
+    echo -e "\n#Add by ccen go_install.sh\nexport GOPATH=~/go" >> .profile
+    echo -e "export PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin" >> .profile
     
-    source .bashrc
+    source .profile
     rm go1.8.linux-amd64.tar.gz
     cd ${current_path}
 fi
