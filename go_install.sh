@@ -1,6 +1,8 @@
 
 #install golang1.$version
-version=11
+version=12
+
+sudo apt-get install build-essential
 
 if [ ! -d /usr/local/go ]; then
     current_path=`pwd`
